@@ -1,0 +1,8 @@
+CREATE USER user1 WITH ENCRYPTED PASSWORD 'user1';
+
+CREATE TABLE tracks (
+ title      VARCHAR(30) NOT NULL,
+ artist     VARCHAR(30) NOT NULL,
+ album      VARCHAR(30) NOT NULL);
+
+GRANT ALL PRIVILEGES ON tracks TO user1;
